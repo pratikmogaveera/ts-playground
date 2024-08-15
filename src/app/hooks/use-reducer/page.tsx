@@ -17,7 +17,7 @@ const ACTIONS: Record<Dispatcher, Action> = {
     CLEAR: "clear"
 }
 
-export function reducer(state: State, action: { type: Action }) {
+function reducer(state: State, action: { type: Action }) {
 
     switch (action.type) {
         case ACTIONS.INCREMENT:
